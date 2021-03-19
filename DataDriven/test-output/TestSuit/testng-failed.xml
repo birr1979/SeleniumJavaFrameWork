@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [TestSuit]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="TestNamme(failed)">
+    <classes>
+      <class name="roughTrials.JDBCMysqlTest">
+        <methods>
+          <include name="mysqlDML"/>
+        </methods>
+      </class> <!-- roughTrials.JDBCMysqlTest -->
+      <class name="roughTrials.ExtentReporter">
+        <methods>
+          <include name="tearDown"/>
+          <include name="cas2"/>
+          <include name="case3"/>
+          <include name="configRepo"/>
+          <include name="endReporter"/>
+          <include name="Testcase3"/>
+          <include name="Testcase2"/>
+        </methods>
+      </class> <!-- roughTrials.ExtentReporter -->
+    </classes>
+  </test> <!-- TestNamme(failed) -->
+</suite> <!-- Failed suite [TestSuit] -->

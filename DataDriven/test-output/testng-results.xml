@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-17T23:52:55 EDT" name="Default suite" finished-at="2021-03-17T23:52:55 EDT" duration-ms="35">
+    <groups>
+    </groups>
+    <test started-at="2021-03-17T23:52:55 EDT" name="Default test" finished-at="2021-03-17T23:52:55 EDT" duration-ms="35">
+      <class name="testCases.Interset">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.Interset@73a2e526]" started-at="2021-03-17T23:52:55 EDT" name="setUp" finished-at="2021-03-17T23:52:55 EDT" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="browserNavigation()[pri:0, instance:testCases.Interset@73a2e526]" started-at="2021-03-17T23:52:55 EDT" name="browserNavigation" finished-at="2021-03-17T23:52:55 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserNavigation -->
+        <test-method signature="www()[pri:0, instance:testCases.Interset@73a2e526]" started-at="2021-03-17T23:52:55 EDT" name="www" finished-at="2021-03-17T23:52:55 EDT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- www -->
+        <test-method is-config="true" signature="tearDwon()[pri:0, instance:testCases.Interset@73a2e526]" started-at="2021-03-17T23:52:55 EDT" name="tearDwon" finished-at="2021-03-17T23:52:55 EDT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "base.TestBase.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "base.TestBase.driver" is null
+at base.TestBase.tearDwon(TestBase.java:152)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:351)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDwon -->
+      </class> <!-- testCases.Interset -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

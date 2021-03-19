@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <RollingFile name="Log4j" fileName="C:\Programming Related\Eclipse\eclipse-workspace\DataDriven\src\test\resources\Logs\Log4jTestlog"
+                       filePattern="target/rolling1/test1-${sd:type}.%i.log.gz">
+            <PatternLayout>
+              <pattern>%d %p %c{1.} [%t] %m%n</pattern>
+            </PatternLayout>
+            <SizeBasedTriggeringPolicy size="5 MB" />
+          </RollingFile>
+          
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+  
+  <Loggers>
+ 
+    <Logger name="testCases" level="trace" additivity="false">
+      <AppenderRef ref="Log4j"/>
+    </Logger>
+    <Logger name="listeners" level="trace" additivity="false">
+      <AppenderRef ref="Log4j"/>
+      
+    </Logger>
+    
+    <Root level="trace">
+      <AppenderRef ref="Log4j"/>
+    </Root>
+  </Loggers>
+</Configuration>
