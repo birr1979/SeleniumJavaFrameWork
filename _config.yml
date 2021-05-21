@@ -1,1 +1,4 @@
 theme: jekyll-theme-merlot
+execution: 50
+hold for: 3m
+ramp-up:2m
